@@ -1,0 +1,208 @@
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-col {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.input-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.styled-input,
+.styled-select {
+  padding: 10px 14px;
+  border: 1px solid #D1D5DB;
+  border-radius: 10px;
+  background: #FFFFFF;
+  font-size: 0.92rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.styled-input:focus,
+.styled-select:focus {
+  border-color: #2D6A4F;
+  box-shadow: 0 0 0 3px rgba(45, 106, 79, 0.12);
+}
+
+.allergies-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.allergy-chip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #F3F4F6;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid #E5E7EB;
+  transition: all 0.2s ease;
+}
+
+.allergy-chip:has(input:checked) {
+  background: #FEE2E2;
+  border-color: #FCA5A5;
+  color: #991B1B;
+  font-weight: 600;
+}
+
+.macro-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.macro-card {
+  background: #FAF9F6;
+  border: 1px solid #E5E7EB;
+  padding: 14px;
+  border-radius: 12px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.calories-card {
+  background: #E8F5E9;
+  border-color: #B7E4C7;
+}
+
+.macro-sub {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  color: #6B7280;
+  font-weight: 600;
+}
+
+.macro-main {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1B4332;
+  line-height: 1.1;
+}
+
+.protein-color { color: #2D6A4F; }
+.carbs-color { color: #F77F00; }
+.fat-color { color: #E76F51; }
+
+.macro-unit {
+  font-size: 0.75rem;
+  color: #9CA3AF;
+}
+
+.meals-section {
+  margin-bottom: 24px;
+}
+
+.meals-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.meal-card {
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  padding: 14px 18px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+}
+
+.meal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.meal-name {
+  font-weight: 700;
+  color: #1B4332;
+  font-size: 0.95rem;
+}
+
+.meal-cals {
+  font-size: 0.85rem;
+  font-weight: 700;
+  background: #FAF5FF;
+  color: #6B21A8;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid #E9D5FF;
+}
+
+.meal-foods {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+  font-size: 0.88rem;
+  color: #4B5563;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.meal-macros-strip {
+  display: flex;
+  gap: 12px;
+  font-size: 0.78rem;
+  color: #6B7280;
+  border-top: 1px dashed #E5E7EB;
+  padding-top: 8px;
+}
+
+.plan-recs-box {
+  background: #F0FDF4;
+  border: 1px solid #BBF7D0;
+  border-radius: 12px;
+  padding: 16px 20px;
+}
+
+.plan-recs-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: #166534;
+}
+
+.meal-description {
+  color: #4B5563;
+  line-height: 1.6;
+  margin: 0 0 16px;
+}
+
+@media (max-width: 600px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  .macro-cards-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

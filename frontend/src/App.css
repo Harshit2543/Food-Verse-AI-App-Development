@@ -1,0 +1,16 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #FEFAE0;
+}
+
+.main-content {
+  flex: 1;
+  padding-top: 72px; /* Space for fixed glassmorphism navbar */
+}
+
+.page-wrapper {
+  min-height: calc(100vh - 72px - 300px);
+  padding: 20px 0 40px;
+}
